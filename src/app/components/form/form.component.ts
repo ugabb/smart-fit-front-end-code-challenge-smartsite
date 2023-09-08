@@ -26,7 +26,7 @@ export class FormComponent {
 
   form: FormGroup = this.fb.group({
     periodo: '',
-    situacao: '',
+    situacao: false,
   });
 
   onSubmit() {

@@ -10,7 +10,12 @@
     <div *ngFor="let horario of horarios" class="options-container">
       <div class="option">
         <div>
-          <input type="radio" name="manha" />
+          <input
+            type="radio"
+            name="periodo"
+            value="{{ horario.periodo }}"
+            formControlName="periodo"
+          />
           <label>{{ horario.periodo }}</label>
         </div>
         <label>{{ horario.hora }}</label>
@@ -20,7 +25,7 @@
 
     <div class="container-res">
       <div class="situacao-container">
-        <input type="checkbox" name="situacao" id="" />
+        <input type="checkbox" name="situacao" formControlName="situacao" />
         <label>Exibir unidades fechadas</label>
       </div>
 
