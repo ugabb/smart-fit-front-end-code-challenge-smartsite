@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="title-container">
+    <img src="../../../assets/icon-hour.png" alt="" />
+    <p>Horário</p>
+  </div>
+  <h3>Qual período quer treinar?</h3>
+  <app-divider-light></app-divider-light>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div *ngFor="let horario of horarios" class="options-container">
+      <div class="option">
+        <div>
+          <input type="radio" name="manha" />
+          <label>{{ horario.periodo }}</label>
+        </div>
+        <label>{{ horario.hora }}</label>
+      </div>
+      <app-divider-light></app-divider-light>
+    </div>
+
+    <div class="container-res">
+      <div class="situacao-container">
+        <input type="checkbox" name="situacao" id="" />
+        <label>Exibir unidades fechadas</label>
+      </div>
+
+      <p class="resultados">Resultados encontrados: <span>0</span></p>
+
+      <div class="buttons-container">
+        <button type="submit" class="search-button">Encontrar Unidade</button>
+        <button type="reset" class="clear-button">Limpar</button>
+      </div>
+    </div>
+  </form>
+</div>

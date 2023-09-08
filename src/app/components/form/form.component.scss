@@ -1,0 +1,111 @@
+.container {
+  font-family: "Gotham-Black-Light", sans-serif;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin: 1rem;
+
+  border: 2px solid #b1b1b1;
+  border-radius: 0.5rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #808080;
+    margin-bottom: 2rem;
+    img {
+      width: 25px;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: #808080;
+    font-weight: lighter;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+
+    .option {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.1rem;
+      padding: 1rem 0;
+
+      input {
+        margin-right: 0.5rem;
+        scale: 1.2;
+      }
+    }
+
+    .container-res {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .situacao-container {
+      // margin: 1rem 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .resultados {
+      // margin: 1rem 0;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-family: "Gotham-Black-Bold", sans-serif;
+        color: #333;
+      }
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .search-button {
+        padding: 1rem 2rem;
+        border: none;
+        background-color: #ffb612;
+        color: black;
+        font-family: "Gotham-Black-Bold", sans-serif;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: #ffb612;
+          background-color: black;
+        }
+      }
+      .clear-button {
+        padding: 1rem 2rem;
+        border: 1px solid #b1b1b1;
+        background-color: transparent;
+        color: black;
+        font-family: "Gotham-Black-Bold", sans-serif;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
